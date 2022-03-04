@@ -1,0 +1,68 @@
+{
+  "products": [
+    {
+      "title": "music 1",
+      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
+      "price": 350,
+      "type": "deep",
+      "description": "deep music",
+      "id": 1
+    },
+    {
+      "title": "music 2",
+      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
+      "price": 350,
+      "type": "deep",
+      "description": "deep music",
+      "id": 2
+    },
+    {
+      "title": "music 3",
+      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
+      "price": 350,
+      "type": "lo-fi",
+      "description": "deep music",
+      "id": 3
+    },
+    {
+      "title": "music 4",
+      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
+      "price": 350,
+      "type": "lo-fi",
+      "description": "lo-fi music",
+      "id": 4
+    },
+    {
+      "title": "music 5",
+      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
+      "price": 350,
+      "type": "deep",
+      "description": "deep music",
+      "id": 5
+    },
+    {
+      "title": "music 6",
+      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
+      "price": 350,
+      "type": "deep",
+      "description": "deep music",
+      "id": 6
+    },
+    {
+      "title": "music 7",
+      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
+      "price": 350,
+      "type": "techno",
+      "description": "techno music",
+      "id": 7
+    },
+    {
+      "title": "music 8",
+      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
+      "price": 350,
+      "type": "techno",
+      "description": "techno music",
+      "id": 8
+    }
+  ]
+}
