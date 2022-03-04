@@ -1,0 +1,123 @@
+.bgMask{
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    overflow: hidden;
+    display: flex;
+    display: block;
+    text-align: center;
+    z-index: -1;
+}
+
+.bgText{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+    position: relative;
+    z-index: 1;
+    margin: 20% 40%;
+    color: white;
+    
+}
+.bgNavbar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+} 
+
+
+.bgVideo{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+} 
+
+.bgLogin{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    /* z-index: 0; */
+    /* position: fixed; */
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+/* .logo  { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}  */
+.bgLogo{
+    size: 10ch;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.AppBar {
+    height: 50;
+    position: absolute;
+
+}
+
+
+.introInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro__title{
+    margin: 0;
+    font-size: 45px;
+    color: white;
+}
+
+.intro__title__two{
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}  
+
+
+
+
+
+/* @media (max-width: 767px)
+.kQurpr {
+    max-width: unset;
+    padding: 0px;
+    height: 100vh;
+    min-height: auto;
+}
+@media (max-width: 320px)
+.kQurpr {
+    width: 100%;
+    padding: 0px;
+}
+@media (max-width: 320px)
+.kQurpr {
+    width: 90%;
+} */

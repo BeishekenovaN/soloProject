@@ -1,0 +1,22 @@
+.cards {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #ad1457;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 100vh;
+  object-fit: cover; 
+  object-position: bottom; 
+}
+
+
+.form-actions {
+  margin: 15px 10px;
+  width: 100px;
+}
+
+.form-cart {
+  margin: 15px 10px;
+  width: 150px;
+}
