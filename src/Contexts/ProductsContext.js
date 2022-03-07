@@ -4,14 +4,15 @@ import { calcSubPrice, calcTotalPrice } from '../Helpers/CalcPrice'
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { auth } from '../Firebass';
 import { API } from '../Helpers/Constants';
-import { Favorite, FavoriteSharp } from '@mui/icons-material';
 
 export const productContext = createContext()
 
 const INIT_STATE = {
-    products: null,
+    products: null, 
     edit: null,
     cart: {},
+    fav: {},
+    favLength: 0,
     cartLength: 0,
     paginatedPages: 1,
     detail: {},    
@@ -30,6 +31,12 @@ const reducer = (state = INIT_STATE, action) => {
             return{...state, cart: action.payload} 
         case "GET_DETAIL_PRODUCT":
             return{...state, detail: action.payload}
+        case "GET_FAV":
+            return{...state, fav: action.payload} 
+        case "CHANGE_FAV_COUNT":
+            return{...state, favLength: action.payload}
+        case "CHANGE_CART_COUNT":
+            return{...state, favLength: action.payload}
         default: 
             return state
     }
@@ -174,7 +181,6 @@ const ProductsContextProvider = ({children}) => {
     //! check product in cart
 
 
-
     const checkProductInCart = (id) =>  {
         let cart = JSON.parse(localStorage.getItem('cart'))
         if(!cart){
@@ -201,34 +207,91 @@ const ProductsContextProvider = ({children}) => {
         })
       }
   
-    //   const [favorites, setFavorites ] = useState();
-    //   const addFav = (props) => {
-    //         let array = favorites;
-    //         let addArray = true;
-    //         array.map((item: any,  key: id)=> {
-    //             if(item === props.i) {
-    //                 array.splice(key,1 );
-    //                 addArray = false;
-    //             }
-    //         });
-    //         if(addArray) {
-    //             array.push(props.i);
-    //         }
-    //         setFavorites([...array])
-    //   }
+     //! add to favorite
+
+     const addToFav = (product) => {
+         let fav = JSON.parse(localStorage.getItem('fav'));
+         if(!fav){
+             fav = {
+                 products: []
+             }
+         }
+         let newProduct = {
+             item: product,
+             count: 1
+         }
+         let filteredFav = checkProductInFav(product.id)
+
+         if (filteredFav === true) {
+             fav.products = fav.products.filter(elem => elem.item.id !== product.id)
+         }else{
+             fav.products.push(newProduct)
+         }
+         localStorage.setItem('fav', JSON.stringify(fav))
+         dispatch({
+            type: "CHANGE_FAV_COUNT",
+            payload: fav.products.length
+        })
+     }
+
+     const getFavLength = () => {
+         let fav = JSON.parse(localStorage.getItem('fav'));
+         if(!fav) {
+             fav = {
+                 products: []
+             }
+         }
+         dispatch({
+             type: "CHANGE_FAV_LENGTH",
+             payload: fav.products.length
+         })
+     }
 
 
-    //   {favorites.includes(i) ? (
-    //       <IoIosHeart 
-    //       onClick={() => addFav({ items, i})}
-    //       style={{ color: 'red'}}
-    //       />
-    //   ):(
-    //       <IoIosHeartEmpty 
-    //       onClick={()=> addFav({ items, i })}
-    //       style={{ color: 'red'}}
-    //       />
-    //   )}
+     const getFav = () => {
+         let fav = JSON.parse(localStorage.getItem('fav'));
+         if(!fav){
+             fav = {
+                 products: []
+             }
+         }
+         dispatch({
+             type: "GET_FAV",
+             payload: fav
+         })
+     }
+
+    
+//! checkproduct in fav
+
+     const checkProductInFav = (id) => {
+         let fav = JSON.parse(localStorage.getItem('fav'))
+         if(!fav){
+             fav = {
+                 products: []
+             }
+         }
+         let newFav = fav.products.filter(elem => elem.item.id === id)
+         return newFav.length > 0 ? true : false
+     }
+
+     function deleteFavProduct(id){
+         let toDelete = JSON.parse(localStorage.getItem('fav'));
+         toDelete.products = toDelete.products.filter(
+             (elem) => elem.item.id !== id
+         );
+         localStorage.setItem('fav', JSON.stringify(toDelete))
+        getFav()
+
+        dispatch({
+            type: "CHANGE_FAV_COUNT",
+            payload: toDelete.products.length
+        })
+        }
+
+     
+
+
 
 
     //! GEt Detail
@@ -293,10 +356,17 @@ const ProductsContextProvider = ({children}) => {
             useAuth,
             deleteCartProduct,
             deleteCartPayment,
+            addToFav,
+            getFav,
+            checkProductInFav,
+            getFavLength,
+            deleteFavProduct,
             edit: state.edit,
             products: state.products,
             cartLength: state.cartLength,
             cart: state.cart,
+            fav: state.fav,
+            favLength: state.favLength,
             paginatedPages: state.paginatedPages,
             detail: state.detail
         }}>

@@ -12,7 +12,7 @@ export default function App() {
   const [cvc, setCvc] = useState("");
   const [focus, setFocus] = useState("");
   const { cart, deleteCartPayment } = useContext(productContext)
-  console.log(cart, 'test')
+ 
 
   useEffect(() => {
     ref.current.focus();
