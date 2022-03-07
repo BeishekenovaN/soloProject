@@ -15,7 +15,7 @@ import { productContext } from '../../Contexts/ProductsContext';
 import { Button } from '@mui/material';
 import './MyNavbar.css'
 import Logo from '../Image/logo/Logo';
-
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 export default function MyNavbar() {
     const { cartLength, getCartLength, useAuth, logout } = React.useContext(productContext)
@@ -181,6 +181,13 @@ export default function MyNavbar() {
           ) : null
         }
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+            <Link to={'/favorite'}>
+            <IconButton>
+              <FavoriteIcon sx={{color: 'white', marginLeft: '3',marginTop: '5px'}} />
+            </IconButton>
+            </Link>
+
+          
            <Link to='/cart'>
                 <IconButton>
                     <Badge badgeContent={cartLength} color='secondary' sx={{paddingTop: '10'}}>

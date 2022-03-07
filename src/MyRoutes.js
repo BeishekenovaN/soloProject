@@ -5,6 +5,7 @@ import EditProduct from './Components/Admin/EditProduct/EditProduct';
 import Login from './Components/Auth/Login/Login';
 import Register from './Components/Auth/Register/Register';
 import Cart from './Components/Cart/Cart';
+import Favorite from './Components/Favorite/Favorite';
 import MyNavbar from './Components/Header/MyNavbar';
 import Home from './Components/Home/Home';
 import Payment from './Components/Payment/Payment';
@@ -29,6 +30,7 @@ const MyRoutes = () => {
                     <Route path='/register' element={<Register/>} />
                     <Route path='/login' element={<Login/>} />       
                     <Route path='/pay' element={<Payment/>} />
+                    <Route path='/favorite' element={<Favorite/>} />
                 </Routes>
             </BrowserRouter>
         </ProductsContextProvider>
