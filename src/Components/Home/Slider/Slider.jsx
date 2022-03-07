@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Carousel from 'react-elastic-carousel';
-// import Item from './Item';
+import Item from './Item';
 import { productContext } from '../../../Contexts/ProductsContext';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Card, CardContent, CardMedia, Typography } from '@mui/material';
@@ -45,7 +45,7 @@ const Slider = () => {
                   {
                     products ? (
                       products.map((item, index) => (
-                        // <Item  key={index} sx={{height: '800px'}}> 
+                        <Item  key={index}> 
                           <Card sx={{ maxWidth: 306, boxShadow: 'none', height: '500px' }}>
                             <Link to={`/detail/${item.id}`} style={{textDecoration: 'none', color: 'black'}}> 
                               <CardMedia
@@ -68,7 +68,7 @@ const Slider = () => {
                               </CardContent>
                             </Link>
                         </Card>
-                        // </Item>
+                        </Item>
                     ))
                   ): (<h1>Loading...</h1>)
                 }

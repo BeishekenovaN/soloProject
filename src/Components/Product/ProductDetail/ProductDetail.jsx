@@ -3,7 +3,6 @@ import { IconButton, Paper, Typography } from '@mui/material';
 import React, { useContext, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { productContext } from '../../../Contexts/ProductsContext';
-import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 
 const ProductDetail = () => {
     const {id} = useParams()
@@ -20,7 +19,7 @@ const ProductDetail = () => {
               
             </div>
             <Paper sx={{width: '100%', height: '100%', padding: "100px 0", boxShadow: 0, display: 'flex', flexDirection: 'column', justifyContent: 'center',}}>
-                <Typography variant='h2' style={{textAlign: 'center'}}>ROLEX</Typography>
+                <Typography variant='h2' style={{textAlign: 'center'}}>Your Music</Typography>
                 {
                     detail ? (
                         <div  style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'start', padding: 20,  flexWrap: 'wrap'}}>
