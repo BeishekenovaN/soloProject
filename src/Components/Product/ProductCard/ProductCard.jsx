@@ -10,10 +10,9 @@ import EditIcon from '@mui/icons-material/Edit';
 import { Link } from 'react-router-dom';
 import './ProductCard.css'
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 
 export default function ProductCard({item}) {
-    const {deleteProduct, addToCart, checkProductInCart, useAuth, addToFav, checkProductInFav} = React.useContext(productContext)
+    const {deleteProduct, addToCart, checkProductInCart, useAuth } = React.useContext(productContext)
     const currentUser = useAuth()
 
 
@@ -39,17 +38,11 @@ export default function ProductCard({item}) {
           <IconButton onClick={() => {
             addToCart(item)  
           }} 
-            color = {checkProductInCart(item.id) ? '#ad1457' : 'grey'}  
+            color = {checkProductInCart(item.id) ? 'success' : 'grey'}  
           >
             <ShoppingBagIcon />
           </IconButton>
-          <IconButton onClick={() => {
-            addToFav(item)
-          }}
-          color = {checkProductInFav(item.id) ? 'success' : 'primary'} > 
-             < FavoriteIcon />
-          </IconButton>
-
+  
       </CardActions>
     )
   return (
