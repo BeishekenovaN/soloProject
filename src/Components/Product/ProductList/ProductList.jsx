@@ -1,6 +1,6 @@
-import { Box, Grid, Pagination, Stack } from '@mui/material';
+import { Box, Grid, Pagination, Stack, Button } from '@mui/material';
 import React, { useContext, useEffect, useState } from 'react';
-import { useNavigate, useSearchParams} from 'react-router-dom';
+import { useNavigate, useSearchParams, Link} from 'react-router-dom';
 import ProductCard from '../ProductCard/ProductCard';
 import SideBar from '../../Home/SideBar/SideBar'
 import SearchIcon from '@mui/icons-material/Search';
@@ -98,7 +98,7 @@ const ProductList = () => {
       <div style={{}}>
           <div style={{backgroundColor: 'black', width: '100%',height:' 100px'}}></div>
           <SideBar />  
-          <Search  >
+          <Search sx={{display:'flex',justifyContent: 'space-between'}} >
             <SearchIconWrapper  >
               <SearchIcon  />
             </SearchIconWrapper>
@@ -109,7 +109,17 @@ const ProductList = () => {
               onChange={handleValue}
               sx={{border: '2px solid'}} 
             />
+
+        <Link to={'/commentList'}>
+        <Button sx={{marginRight: 5}} 
+        variant='contained'
+        color='primary'>
+          Отзывы
+        </Button>
+        </Link>
         </Search>
+        
+
 
           <Box sx={{flexGrow: 1, margin: 4}}>
               <Grid container spacing={{xs: 1, md: 6}} columns={{xs: 1, sm: 3, md: 12}}>

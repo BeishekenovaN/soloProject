@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default styled.div`
 display: flex;
-paddingTop: 30vh;
+
 justify-content: center;
 align-items: center;
 height: 500px;

@@ -9,60 +9,156 @@
       "id": 1
     },
     {
-      "title": "music 2",
-      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
-      "price": 350,
+      "title": "pink floyd",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPyuerROmJqw2lE58YwweWJcQ3-AN2cFRWFhIgCsuT30i0uh2P0S4P2n9AzqREzwPn3U&usqp=CAU",
+      "price": 700,
       "type": "deep",
       "description": "deep music",
       "id": 2
     },
     {
-      "title": "music 3",
-      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
+      "title": "Live the Look",
+      "image": "https://media.architecturaldigest.com/photos/5890e88033bd1de9129eab0a/1:1/w_870,h_870,c_limit/Artist-Designed%20Album%20Covers%202.jpg",
       "price": 350,
       "type": "lo-fi",
       "description": "deep music",
       "id": 3
     },
     {
-      "title": "music 4",
-      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
-      "price": 350,
+      "title": "moon name",
+      "image": "https://i.pinimg.com/originals/cc/da/c8/ccdac86510cc878172542c1fe100e8c7.jpg",
+      "price": 400,
       "type": "lo-fi",
       "description": "lo-fi music",
       "id": 4
     },
     {
-      "title": "music 5",
-      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
-      "price": 350,
+      "title": "mixtape",
+      "image": "https://townsquare.media/site/812/files/2020/05/Illustrated-album-covers.jpg?w=1200",
+      "price": 650,
       "type": "deep",
       "description": "deep music",
       "id": 5
     },
     {
-      "title": "music 6",
-      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
-      "price": 350,
+      "title": "King's Cross",
+      "image": "https://cdn.kingscross.co.uk/media/20191118225723/Tame-Impala.jpeg",
+      "price": 900,
       "type": "deep",
       "description": "deep music",
       "id": 6
     },
     {
-      "title": "music 7",
-      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
-      "price": 350,
+      "title": "Franck Ocean",
+      "image": "https://www.sleek-mag.com/wp-content/uploads/2016/08/AlbumCovers_Blonde-1200x1200.jpg",
+      "price": 1200,
       "type": "techno",
       "description": "techno music",
       "id": 7
     },
     {
-      "title": "music 8",
-      "image": "https://avatars.mds.yandex.net/i?id=22eba729ae7e334bc3640b26cce842ff-5858859-images-thumbs&n=13",
+      "title": "rayan jones",
+      "image": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/artistic-album-cover-design-template-d12ef0296af80b58363dc0deef077ecc_screen.jpg?ts=1561488440",
       "price": 350,
       "type": "techno",
       "description": "techno music",
       "id": 8
+    },
+    {
+      "title": "Top 10 minutes",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV-p-X04673W1tDPJ1ZD8AQOOd63OIA4NDwA&usqp=CAU",
+      "price": 5600,
+      "type": "deep",
+      "description": "deep music",
+      "id": 9
+    },
+    {
+      "title": "Shannon",
+      "image": "https://images.squarespace-cdn.com/content/v1/57331a5c60b5e9509bc97aa1/1591627831715-N5Y982J66JPK5YT11YBY/Command-Prompt-XML-Album-Cover-Artwork-2000-x-2000.jpg?format=2500w",
+      "price": 3400,
+      "type": "lo-fi",
+      "description": "lo-fi music",
+      "id": 10
+    },
+    {
+      "title": "Shannon",
+      "image": "https://images.squarespace-cdn.com/content/v1/57331a5c60b5e9509bc97aa1/1591627831715-N5Y982J66JPK5YT11YBY/Command-Prompt-XML-Album-Cover-Artwork-2000-x-2000.jpg?format=2500w",
+      "price": 3400,
+      "type": "lo-fi",
+      "description": "lo-fi music",
+      "id": 11
+    },
+    {
+      "title": "Shannon",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVSujJ4TXk2b3Hw9G8pT2tQT2RHLSsv6NM9Rrg20KV9AuF3sklCpiICycTJ4Io5TmZ494&usqp=CAU",
+      "price":4440,
+      "type": "deep",
+      "description": "deeep music",
+      "id": 12
+    },
+    {
+      "title": "QUEEN the miracle",
+      "image": "https://www.musicnotes.com/now/wp-content/uploads/the-miracle-queen.jpg",
+      "price": 3400,
+      "type": "techno",
+      "description": "techno music",
+      "id": 13
+    },
+    {
+      "title": "creators",
+      "image": "https://play-lh.googleusercontent.com/vfPYnPDLvWa09WqmJ4fPhiklOQmGBYIGPeqPwaorTvyQqAbZw6mH7hHw3VpF0TF-qe8",
+      "price": 766,
+      "type": "lo-fi",
+      "description": "lo-fi music",
+      "id": 14
+    },
+    {
+      "title": "the miracle",
+      "image": "https://images.squarespace-cdn.com/content/v1/53b6eb62e4b06e0feb2d8e86/1607362705516-R5Q22H4FVIVPNMW8OWD7/SamSpratt_KidCudi_ManOnTheMoon3_AlbumCover_Web.jpg?format=original",
+      "price": 7000,
+      "type": "deep",
+      "description": "techno music",
+      "id": 15
+    },
+    {
+      "title": "kiss",
+      "image": "https://cdn.europosters.eu/image/750/magnet/kiss-love-gun-album-cover-i80717.jpg",
+      "price": 12000,
+      "type": "lo-fi",
+      "description": "lo-fi music",
+      "id": 16
+    }
+  ],
+  "comments": [
+    {
+      "username": "nargiza",
+      "title": "kiss",
+      "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). ",
+      "id": 1
+    },
+    {
+      "username": "urba",
+      "title": "kanye west album",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "id": 2
+    },
+    {
+      "username": "rueee",
+      "title": "rihana album",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      "id": 3
+    },
+    {
+      "username": "alex",
+      "title": "rihana album",
+      "text": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because o",
+      "id": 4
+    },
+    {
+      "username": "bakyt",
+      "title": " ocean album",
+      "text": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of b",
+      "id": 4
     }
   ]
 }

@@ -5,6 +5,10 @@ import EditProduct from './Components/Admin/EditProduct/EditProduct';
 import Login from './Components/Auth/Login/Login';
 import Register from './Components/Auth/Register/Register';
 import Cart from './Components/Cart/Cart';
+import AddComment from './Components/Comments/AddComment';
+import CommentContextProvider from './Components/Comments/CommentContext';
+import CommentList from './Components/Comments/CommentList';
+import EditComment from './Components/Comments/EditComment';
 import Favorite from './Components/Favorite/Favorite';
 import MyNavbar from './Components/Header/MyNavbar';
 import Home from './Components/Home/Home';
@@ -32,7 +36,14 @@ const MyRoutes = () => {
                     <Route path='/pay' element={<Payment/>} />
                     <Route path='/favorite' element={<Favorite/>} />
                 </Routes>
-            </BrowserRouter>
+        <CommentContextProvider>
+                <Routes>
+                    <Route path='/addComment' element={<AddComment/>} />
+                    <Route path='/editComment' element={<EditComment/>} />
+                    <Route path='/commentList' element={<CommentList/>} />
+                </Routes>
+        </CommentContextProvider>
+        </BrowserRouter>
         </ProductsContextProvider>
     );
 };

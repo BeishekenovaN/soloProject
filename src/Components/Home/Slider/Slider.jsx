@@ -34,7 +34,7 @@ const Slider = () => {
     }, [])
     return (
       <div>
-        <div style={{ position: 'relative', display: 'flex', justifyContent: 'space-around', alignItems: 'center',paddingTop: '25vh', flexWrap: 'wrap',backgroundColor: '#4a148c', height: '100% '  }}>
+        <div style={{ position: 'relative', display: 'flex', justifyContent: 'space-around', alignItems: 'center',paddingTop: '20vh', flexWrap: 'wrap',backgroundColor: '#4a148c', height: '100% '  }}>
           <h1 style={{padding: '0 15px', color:'white'}}>TOP Album</h1>
           <Link style={{textDecoration: 'none', color: 'white'}} to='/list'>
             <h1 >View All</h1>
@@ -49,11 +49,11 @@ const Slider = () => {
                           <Card sx={{ maxWidth: 306, boxShadow: 'none', height: '500px' }}>
                             <Link to={`/detail/${item.id}`} style={{textDecoration: 'none', color: 'black'}}> 
                               <CardMedia
-                                // sx={{width: '300px'}}
+                                sx={{width: '300px'}}
                                 component="img"
                                 image={item.image}
                                 alt={item.title}
-                                sx={{paddingTop: '100px'}}
+                                sx={{paddingTop: '10px', height: "300px"}}
                               />
                               <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
